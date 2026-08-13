@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @PropertySources({
-    @PropertySource("classpath:application.development.properties"),
+    @PropertySource("classpath:application-dev.properties"),
     @PropertySource("classpath:custom.properties")
 })
 
@@ -27,11 +27,11 @@ public class MyFirstService {
         return environment;
     }
 
-    @Value("${my.prop}")
-    public String myPropFromDev;
+    @Value("${my.custom.property}")
+    public String myStringPropFromCustom;
 
-    @Value("${my.custom.prop}")
-    public String myPropFromCustom;
+    @Value("${my.custom.property.int}")
+    public Integer myIntPropFromCustom;
 
     @Autowired
     public void setEnvironment(Environment environment) {
@@ -49,7 +49,7 @@ public class MyFirstService {
     // }
 
     public String tellAStory() {
-        return "The service bean is saying "+ myFirstClass.sayHello() + " with myPropFromDev = "+ this.myPropFromDev + " and my.propFromCustom = " + this.myPropFromCustom;
+        return "The service bean is saying "+ myFirstClass.sayHello() + " with myStringProp = "+ this.myStringPropFromCustom + " and myIntpropFromCustom = " + this.myIntPropFromCustom;
     }
 
     public String getJavaVersion() {
