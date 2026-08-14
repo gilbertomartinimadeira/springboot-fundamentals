@@ -1,0 +1,1 @@
+docker run --name postgres-db -e POSTGRES_USER=root -e POSTGRES_PASSWORD=123Change -p 5432:5432 -d postgres

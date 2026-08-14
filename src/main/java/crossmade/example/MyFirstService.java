@@ -38,7 +38,7 @@ public class MyFirstService {
         this.environment = environment;
     }
 
-    public MyFirstService( @Qualifier("bean1") MyFirstClass myFirstClass ) {
+    public MyFirstService( @Qualifier("mySecondBean") MyFirstClass myFirstClass ) {
         this.myFirstClass = myFirstClass;
     }
 
@@ -65,7 +65,6 @@ public class MyFirstService {
     }
 
     public String getCustomProperty() {
-        // TODO Auto-generated method stub
         return  this.environment.getProperty("my.custom.property");
     }
 }

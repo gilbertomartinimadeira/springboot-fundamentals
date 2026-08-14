@@ -24,4 +24,6 @@ public class ExampleApplication {
 		System.out.println(myFirstService.getJavaHome());
 		System.out.println(myFirstService.getCustomProperty());
 	}	
-} // Time 1:21:00
+} // Time 2:22:00
+ // 1:57:44 - Spring REST
+
