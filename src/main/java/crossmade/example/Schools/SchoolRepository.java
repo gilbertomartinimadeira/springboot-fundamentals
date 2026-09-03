@@ -1,4 +1,4 @@
-package crossmade.example;
+package crossmade.example.Schools;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,8 +1,9 @@
-package crossmade.example;
+package crossmade.example.Students;
     
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+import crossmade.example.Schools.School;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

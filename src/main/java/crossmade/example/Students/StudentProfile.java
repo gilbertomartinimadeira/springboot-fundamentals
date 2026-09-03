@@ -1,4 +1,4 @@
-package crossmade.example;
+package crossmade.example.Students;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
